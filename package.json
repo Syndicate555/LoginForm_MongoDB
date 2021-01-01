@@ -1,0 +1,24 @@
+{
+  "name": "loginform_mongodb",
+  "version": "1.0.0",
+  "description": "basic login form connected to a mongodb database",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Syndicate555/LoginForm_MongoDB.git"
+  },
+  "author": "Saffat Aziz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Syndicate555/LoginForm_MongoDB/issues"
+  },
+  "homepage": "https://github.com/Syndicate555/LoginForm_MongoDB#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.9"
+  }
+}
