@@ -53,7 +53,7 @@
 
 var express=require("express"); 
 var bodyParser=require("body-parser"); 
-
+const path = require('path')
 const mongoose = require('mongoose'); 
 mongoose.connect('mongodb://localhost:27017/gfg'); 
 var db=mongoose.connection; 
@@ -64,6 +64,8 @@ db.once('open', function(callback){
 
 var app=express() 
 
+const static_path = path.join(__dirname);
+app.use(express.static(static_path))
 
 app.use(bodyParser.json()); 
 app.use(express.static('public')); 
